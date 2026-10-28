@@ -107,9 +107,11 @@ public class ProfileTests
         Assert.Contains(ControllerAction.Confirm, router.Update(3, .3, Pad(buttons: PadButton.L3), true, true, InputContext.Menu).Actions);
         router.Update(4, .4, Pad(PadModel.DualShock4), true, true, InputContext.Menu);
         Assert.Equal(PadButton.Cross, router.Bindings.ButtonFor(InputContext.Menu, ControllerAction.Confirm));
-        router.Update(5, .5, Pad(), true, true, InputContext.Menu);
+        router.Update(5, .5, Pad(buttons: PadButton.L3), true, true, InputContext.Menu);
         Assert.Equal(PadButton.L3, router.Bindings.ButtonFor(InputContext.Menu, ControllerAction.Confirm));
-        Assert.Empty(router.Update(5, .5, Pad(buttons: PadButton.L3), true, true, InputContext.Menu).Actions);
+        Assert.Empty(router.Update(6, .6, Pad(buttons: PadButton.L3), true, true, InputContext.Menu).Actions);
+        router.Update(7, .7, Pad(), true, true, InputContext.Menu);
+        Assert.Contains(ControllerAction.Confirm, router.Update(8, .8, Pad(buttons: PadButton.L3), true, true, InputContext.Menu).Actions);
     }
     [Fact] public void AnalogNavigationUsesActionAfterDirectionIsRebound()
     {

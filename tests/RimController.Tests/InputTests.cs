@@ -154,6 +154,30 @@ public class InputTests
         pad.LeftStick = new Stick(0, 1);
         Assert.Equal(new[] { ControllerAction.Up }, Step(router, 1, .1, pad).Actions);
     }
+    [Theory]
+    [InlineData(InputContext.Menu, true, 1f)]
+    [InlineData(InputContext.Menu, false, .3f)]
+    [InlineData(InputContext.Modal, true, .3f)]
+    public void MenuStickNavigationIgnoresCameraPreferences(InputContext context, bool invertY, float sensitivity)
+    {
+        var router = new InputRouter { InvertY = invertY, Sensitivity = sensitivity };
+        Step(router, 0, 0, context: context);
+        var pad = Pad(); pad.LeftStick = new Stick(0, 1);
+        Assert.Equal(new[] { ControllerAction.Up }, Step(router, 1, .1, pad, context: context).Actions);
+    }
+    [Theory]
+    [InlineData(InputContext.Gameplay)]
+    [InlineData(InputContext.Building)]
+    public void CameraAndCursorRetainSensitivityAndInversion(InputContext context)
+    {
+        var router = new InputRouter { InvertY = true, Sensitivity = .3f };
+        Step(router, 0, 0, context: context);
+        var pad = Pad(); pad.LeftStick = pad.RightStick = new Stick(0, 1);
+        var result = Step(router, 1, .1, pad, context: context);
+        Assert.Equal(-.3f, result.Camera.Y, 5);
+        Assert.Equal(-.3f, result.Cursor.Y, 5);
+        Assert.Empty(result.Actions);
+    }
     [Fact] public void CapabilityChangeRequiresNeutralAndUpdatesHint()
     {
         var router = new InputRouter();

@@ -94,10 +94,11 @@ namespace RimController.Core
             Stick right = pad.RightStick.Filter(deadzone, Sensitivity, InvertY);
             bool menu = context == InputContext.Menu || context == InputContext.Modal;
             PadButton held = pad.Buttons;
-            if (menu && left.Magnitude > 0.55f)
-                held |= Bindings.ButtonFor(context, Math.Abs(left.X) > Math.Abs(left.Y)
-                    ? (left.X > 0 ? ControllerAction.Right : ControllerAction.Left)
-                    : (left.Y > 0 ? ControllerAction.Up : ControllerAction.Down));
+            Stick navigation = pad.LeftStick.Filter(deadzone);
+            if (menu && navigation.Magnitude > 0.55f)
+                held |= Bindings.ButtonFor(context, Math.Abs(navigation.X) > Math.Abs(navigation.Y)
+                    ? (navigation.X > 0 ? ControllerAction.Right : ControllerAction.Left)
+                    : (navigation.Y > 0 ? ControllerAction.Up : ControllerAction.Down));
             foreach (var pair in Bindings.For(context))
             {
                 bool down = (held & pair.Key) != 0;

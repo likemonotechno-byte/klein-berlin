@@ -44,7 +44,27 @@ geprüft werden. Die Linux-Tests bestätigen diese Punkte nicht.
 `SHA256SUMS.json` enthält die SHA-256-Werte aller anderen Archivdateien.
 `BUILD-STATUS.json` dokumentiert den verwalteten Build und offene Mac-Prüfungen.
 Nach einem eigenen nativen Build ändern sich Dateien bewusst; das Manifest
-beschreibt den ursprünglichen Archivinhalt.
+beschreibt den ursprünglichen Archivinhalt. Das Manifest im ZIP beweist keine
+vertrauenswürdige Herkunft, weil es gemeinsam mit dem Inhalt verändert werden kann.
+
+Vor automatischem Entpacken und Ausführen benötigt der Prüfer einen unabhängig
+bekannten SHA-256-Wert des gesamten ZIPs, etwa vom vertrauenswürdigen Herausgeber
+über einen authentifizierten Kanal oder aus einem selbst ausgeführten lokalen Build.
+Den erwarteten Wert nicht aus einem unbekannten ZIP oder dessen Begleitdateien beziehen.
+Aus einem vertrauenswürdigen Checkout ausführen:
+
+```bash
+python3 scripts/verify-prototype.py /Pfad/RimController-Mac-Prototyp.zip --trusted-sha256 <vertrauenswürdiger-64-stelliger-SHA256-Wert>
+```
+
+Ohne passenden vertrauenswürdigen Wert stoppt die Prüfung vor dem Entpacken und
+vor sämtlichen Build-/Testbefehlen. Dann aus vertrauenswürdigen lokalen Quellen
+neu bauen. Der Prüfer führt nach erfolgreicher Authentifizierung den entpackten
+Build aus und vergleicht beide DLLs vollständig mit den Neubauten. Buildpfade
+und automatisch eingebettete Git-Metadaten werden bei der Kompilierung vereinheitlicht,
+damit ein Checkout und ein temporär entpacktes ZIP identische DLLs ergeben. Mit älteren Paketen ohne diese Vereinheitlichung
+oder einer anderen SDK-Version kann der Vergleich fehlschlagen; solche Pakete aus
+vertrauenswürdigen Quellen mit dem gepinnten SDK neu erstellen.
 
 Ein neues Entwicklungspaket kann mit Python 3.9+ und installiertem .NET SDK erstellt
 werden: `python3 scripts/package-prototype.py --output /gewünschter/Pfad/RimController-Mac-Prototyp.zip`.

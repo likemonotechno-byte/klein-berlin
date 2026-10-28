@@ -21,6 +21,7 @@ scripts/build-managed.sh
 scripts/build-native.sh
 scripts/package-files.txt
 scripts/package-prototype.py
+scripts/test_verify_prototype.py
 scripts/verify-prototype.py
 src/RimController.Core/Bindings.cs
 src/RimController.Core/Controller.cs
