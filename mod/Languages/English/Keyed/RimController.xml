@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RC_Prototype>Stage 1: input diagnostics. The gameplay UI is not replaced yet.</RC_Prototype>
+  <RC_Deadzone>Stick deadzone</RC_Deadzone>
+  <RC_Sensitivity>Stick sensitivity</RC_Sensitivity>
+  <RC_InvertY>Invert stick Y axes</RC_InvertY>
+  <RC_SteamInput>For this prototype: disable Steam Input for RimWorld in Steam’s controller settings.</RC_SteamInput>
+  <RC_VersionUnsupported>Unsupported game version. RimWorld 1.6 is required.</RC_VersionUnsupported>
+  <RC_OpenDiagnostics>Open controller diagnostics</RC_OpenDiagnostics>
+  <RC_MacRequired>Native input requires macOS.</RC_MacRequired>
+  <RC_BridgeMissing>Native bridge missing. Run scripts/build-native.sh on your Mac.</RC_BridgeMissing>
+  <RC_BridgeError>Native input stopped after an error. The classic interface remains available.</RC_BridgeError>
+  <RC_NoController>No DualSense or DualShock 4 detected. Pair one in macOS.</RC_NoController>
+  <RC_Connected>Controller connected</RC_Connected>
+  <RC_Diagnostics>PlayStation controller diagnostics</RC_Diagnostics>
+  <RC_Runtime>Game / Unity / pointer size / OS</RC_Runtime>
+  <RC_Device>Device</RC_Device>
+  <RC_Buttons>Held buttons</RC_Buttons>
+  <RC_PauseBinding>Gameplay pause binding (preview only)</RC_PauseBinding>
+  <RC_Ready>Ready</RC_Ready>
+  <RC_ReleaseControls>Release all buttons and sticks to enable navigation.</RC_ReleaseControls>
+  <RC_Confirmations>Confirmation counter</RC_Confirmations>
+  <RC_Bindings>Effective bindings</RC_Bindings>
+  <RC_TestConfirm>Test confirmation</RC_TestConfirm>
+  <RC_Close>Close</RC_Close>
+  <RC_DiagnosticHelp>{0}/{1} / left stick: focus · {2}: confirm · {3}: back · Right stick: scroll</RC_DiagnosticHelp>
+  <RC_Action_Confirm>Select / confirm</RC_Action_Confirm>
+  <RC_Action_Cancel>Cancel / back</RC_Action_Cancel>
+  <RC_Action_Context>Context actions</RC_Action_Context>
+  <RC_Action_Overview>Colony overview</RC_Action_Overview>
+  <RC_Action_Previous>Previous colonist</RC_Action_Previous>
+  <RC_Action_Next>Next colonist</RC_Action_Next>
+  <RC_Action_Pause>Pause / resume</RC_Action_Pause>
+  <RC_Action_GameMenu>Game menu</RC_Action_GameMenu>
+  <RC_Action_SpeedDown>Slower</RC_Action_SpeedDown>
+  <RC_Action_SpeedUp>Faster</RC_Action_SpeedUp>
+  <RC_Action_Alerts>Alerts</RC_Action_Alerts>
+  <RC_Action_Build>Build</RC_Action_Build>
+  <RC_ProfileEditor>Controller profiles and bindings</RC_ProfileEditor>
+  <RC_Model>Model</RC_Model>
+  <RC_Context>Context</RC_Context>
+  <RC_Action>Action</RC_Action>
+  <RC_CurrentBinding>Effective button</RC_CurrentBinding>
+  <RC_ChooseButton>Choose button</RC_ChooseButton>
+  <RC_ResetModel>Reset bindings for this model</RC_ResetModel>
+  <RC_ConnectModel>Connect the selected controller to edit its available inputs.</RC_ConnectModel>
+  <RC_ProfileConflict>Binding rejected: button occupied, action invalid or input unavailable. Free the button first.</RC_ProfileConflict>
+  <RC_ProfileUnknown>Unknown model, context or action in profile was ignored.</RC_ProfileUnknown>
+  <RC_ProfileUnavailable>Saved input is unavailable on this connection; using the standard binding where possible. The saved choice is retained.</RC_ProfileUnavailable>
+  <RC_ProfileVersion>Unsupported profile format; defaults are active.</RC_ProfileVersion>
+  <RC_ProfileInvalid>Invalid profile data was discarded; defaults apply to missing values.</RC_ProfileInvalid>
+  <RC_ProfileSaved>Binding saved. Release controls before continuing.</RC_ProfileSaved>
+  <RC_ProfileReset>Bindings for this model reset.</RC_ProfileReset>
+  <RC_TutorialEnabled>Enable controller tutorial</RC_TutorialEnabled>
+  <RC_TutorialPending>Tutorial preference is saved; actual game lessons are not included in this prototype.</RC_TutorialPending>
+  <RC_Context_Gameplay>Gameplay</RC_Context_Gameplay>
+  <RC_Context_Menu>Menu</RC_Context_Menu>
+  <RC_Context_Modal>Modal dialog</RC_Context_Modal>
+  <RC_Context_Building>Building</RC_Context_Building>
+  <RC_Action_Up>Up</RC_Action_Up>
+  <RC_Action_Down>Down</RC_Action_Down>
+  <RC_Action_Left>Left</RC_Action_Left>
+  <RC_Action_Right>Right</RC_Action_Right>
+  <RC_Action_PagePrevious>Previous page</RC_Action_PagePrevious>
+  <RC_Action_PageNext>Next page</RC_Action_PageNext>
+  <RC_Action_RotateLeft>Rotate left</RC_Action_RotateLeft>
+  <RC_Action_RotateRight>Rotate right</RC_Action_RotateRight>
+</LanguageData>

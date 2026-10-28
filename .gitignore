@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+artifacts/
+mod/1.6/Assemblies/
+mod/Native/
+.DS_Store

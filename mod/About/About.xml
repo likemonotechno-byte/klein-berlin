@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimController — Mac Input Prototype</name>
+  <author>RimController contributors</author>
+  <packageId>likemonotechno.rimcontroller</packageId>
+  <supportedVersions><li>1.6</li></supportedVersions>
+  <description>Stage 1 diagnostic prototype for DualSense and DualShock 4 on macOS. Open Options → Mod settings → RimController to inspect input. This build does not replace the gameplay interface. Native macOS verification is required before later stages.</description>
+</ModMetaData>
