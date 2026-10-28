@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RC_Prototype>Etappe 1: Eingabediagnose. Die Spieloberfläche wird noch nicht ersetzt.</RC_Prototype>
+  <RC_Deadzone>Stick-Deadzone</RC_Deadzone>
+  <RC_Sensitivity>Stick-Empfindlichkeit</RC_Sensitivity>
+  <RC_InvertY>Y-Achsen der Sticks umkehren</RC_InvertY>
+  <RC_SteamInput>Für diesen Prototyp: Steam Input für RimWorld in den Steam-Controllereinstellungen deaktivieren.</RC_SteamInput>
+  <RC_VersionUnsupported>Nicht unterstützte Spielversion. RimWorld 1.6 wird benötigt.</RC_VersionUnsupported>
+  <RC_OpenDiagnostics>Controller-Diagnose öffnen</RC_OpenDiagnostics>
+  <RC_MacRequired>Native Eingabe benötigt macOS.</RC_MacRequired>
+  <RC_BridgeMissing>Native Bridge fehlt. scripts/build-native.sh auf dem Mac ausführen.</RC_BridgeMissing>
+  <RC_BridgeError>Native Eingabe nach Fehler gestoppt. Die klassische Oberfläche bleibt verfügbar.</RC_BridgeError>
+  <RC_NoController>Kein DualSense oder DualShock 4 erkannt. Einen Controller in macOS koppeln.</RC_NoController>
+  <RC_Connected>Controller verbunden</RC_Connected>
+  <RC_Diagnostics>PlayStation-Controller-Diagnose</RC_Diagnostics>
+  <RC_Runtime>Spiel / Unity / Zeigergröße / Betriebssystem</RC_Runtime>
+  <RC_Device>Gerät</RC_Device>
+  <RC_Buttons>Gehaltene Tasten</RC_Buttons>
+  <RC_PauseBinding>Spielpause-Belegung (nur Vorschau)</RC_PauseBinding>
+  <RC_Ready>Bereit</RC_Ready>
+  <RC_ReleaseControls>Alle Tasten und Sticks loslassen, um die Navigation freizugeben.</RC_ReleaseControls>
+  <RC_Confirmations>Bestätigungszähler</RC_Confirmations>
+  <RC_Bindings>Wirksame Belegungen</RC_Bindings>
+  <RC_TestConfirm>Bestätigung testen</RC_TestConfirm>
+  <RC_Close>Schließen</RC_Close>
+  <RC_DiagnosticHelp>{0}/{1} / linker Stick: Fokus · {2}: bestätigen · {3}: zurück · Rechter Stick: scrollen</RC_DiagnosticHelp>
+  <RC_Action_Confirm>Auswählen / bestätigen</RC_Action_Confirm>
+  <RC_Action_Cancel>Abbrechen / zurück</RC_Action_Cancel>
+  <RC_Action_Context>Kontextaktionen</RC_Action_Context>
+  <RC_Action_Overview>Kolonieübersicht</RC_Action_Overview>
+  <RC_Action_Previous>Vorheriger Kolonist</RC_Action_Previous>
+  <RC_Action_Next>Nächster Kolonist</RC_Action_Next>
+  <RC_Action_Pause>Pause / fortsetzen</RC_Action_Pause>
+  <RC_Action_GameMenu>Spielmenü</RC_Action_GameMenu>
+  <RC_Action_SpeedDown>Langsamer</RC_Action_SpeedDown>
+  <RC_Action_SpeedUp>Schneller</RC_Action_SpeedUp>
+  <RC_Action_Alerts>Meldungen</RC_Action_Alerts>
+  <RC_Action_Build>Bauen</RC_Action_Build>
+  <RC_ProfileEditor>Controller-Profile und Belegungen</RC_ProfileEditor>
+  <RC_Model>Modell</RC_Model>
+  <RC_Context>Bedienkontext</RC_Context>
+  <RC_Action>Aktion</RC_Action>
+  <RC_CurrentBinding>Wirksame Taste</RC_CurrentBinding>
+  <RC_ChooseButton>Taste wählen</RC_ChooseButton>
+  <RC_ResetModel>Belegungen dieses Modells zurücksetzen</RC_ResetModel>
+  <RC_ConnectModel>Zum Bearbeiten der verfügbaren Tasten das gewählte Modell verbinden.</RC_ConnectModel>
+  <RC_ProfileConflict>Belegung verworfen: Taste belegt, Aktion ungültig oder Eingabe nicht verfügbar. Taste zuerst freigeben.</RC_ProfileConflict>
+  <RC_ProfileUnknown>Unbekanntes Modell, unbekannter Kontext oder unbekannte Aktion im Profil wurde ignoriert.</RC_ProfileUnknown>
+  <RC_ProfileUnavailable>Gespeicherte Eingabe ist an dieser Verbindung nicht verfügbar; soweit möglich gilt die Standardbelegung. Die Auswahl bleibt gespeichert.</RC_ProfileUnavailable>
+  <RC_ProfileVersion>Unbekanntes Profilformat; Standardwerte sind aktiv.</RC_ProfileVersion>
+  <RC_ProfileInvalid>Ungültige Profildaten wurden verworfen; fehlende Werte verwenden Standards.</RC_ProfileInvalid>
+  <RC_ProfileSaved>Belegung gespeichert. Vor dem Fortfahren alle Eingaben loslassen.</RC_ProfileSaved>
+  <RC_ProfileReset>Belegungen dieses Modells zurückgesetzt.</RC_ProfileReset>
+  <RC_TutorialEnabled>Controller-Tutorial aktivieren</RC_TutorialEnabled>
+  <RC_TutorialPending>Tutorial-Einstellung wird gespeichert; echte Spiellektionen sind noch nicht Teil dieses Prototyps.</RC_TutorialPending>
+  <RC_Context_Gameplay>Spielkarte</RC_Context_Gameplay>
+  <RC_Context_Menu>Menü</RC_Context_Menu>
+  <RC_Context_Modal>Modaler Dialog</RC_Context_Modal>
+  <RC_Context_Building>Bauen</RC_Context_Building>
+  <RC_Action_Up>Nach oben</RC_Action_Up>
+  <RC_Action_Down>Nach unten</RC_Action_Down>
+  <RC_Action_Left>Nach links</RC_Action_Left>
+  <RC_Action_Right>Nach rechts</RC_Action_Right>
+  <RC_Action_PagePrevious>Vorherige Seite</RC_Action_PagePrevious>
+  <RC_Action_PageNext>Nächste Seite</RC_Action_PageNext>
+  <RC_Action_RotateLeft>Nach links drehen</RC_Action_RotateLeft>
+  <RC_Action_RotateRight>Nach rechts drehen</RC_Action_RotateRight>
+</LanguageData>
